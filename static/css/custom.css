@@ -66,6 +66,9 @@ pre code {
 p {
     font-size: 1.3em;
 }
+p > a {
+    color: #018cb3;
+}
 footer {
     border-top: solid;
     border-top-color: #d9d9d9;
