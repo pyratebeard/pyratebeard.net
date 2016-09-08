@@ -8,5 +8,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include('root.urls')),
+    url(r'^$', include('root.urls')),
+    url(r'^mcc', include('mcc.urls')),
+    url(r'^powerzone', include('powerzone.urls')),
 )
