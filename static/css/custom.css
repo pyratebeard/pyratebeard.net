@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Pirata One");
+@import url("https://fonts.googleapis.com/css?family=Acme");
+body {
+  font-family: "Pirata One";
+  font-size: 14px;
+  color: #d9d9d9;
+  background-image: url("/static/img/bg/ocean.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.panel {
+    background: transparent;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+    font-family: "Pirata One";
+}
+a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+a:active,
+a:hover {
+    text-decoration: none;
+    color: #019cb3;
+}
+nav {
+    font-size: 2em;
+}
+.navbar {
+    border-top: solid;
+    border-top-color: #d9d9d9;
+    border-top-width: 1px;
+    border-bottom: solid;
+    border-bottom-color: #d9d9d9;
+    border-bottom-width: 1px;
+}
+.navbar-right {
+    padding-top: 5px;
+    padding-left: 11px;
+    margin-right: 10px;
+}
+.nav > li > a:hover {
+    background: transparent;
+}
+.icon-bar {
+    background: #d9d9d9;
+}
+pre code {
+    color: #d9d9d9;
+    background-color: transparent;
+}
+.container {
+    max-width: 1132px;
+    min-height: 500px;
+    width: inherit;
+    padding-top: 11px;
+}
+.content {
+    padding-left: 20px;
+    font-family: "Acme";
+}
+p {
+    font-size: 1.3em;
+}
+footer {
+    border-top: solid;
+    border-top-color: #d9d9d9;
+    border-top-width: 1px;
+    font-size: 2em;
+}
