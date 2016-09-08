@@ -43,7 +43,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'root',
-    'mcc'
+    'blog',
+    'mcc',
+    'powerzone'
 )
 
 MIDDLEWARE_CLASSES = (
