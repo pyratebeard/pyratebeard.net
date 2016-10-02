@@ -14,7 +14,7 @@ with open('/etc/pyratebeardnet.key') as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # internationalization
 
