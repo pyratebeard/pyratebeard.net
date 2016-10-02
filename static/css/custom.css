@@ -16,7 +16,9 @@ img {
   max-width: 100%;
 }
 h1,
+h2,
 h3,
+h4,
 h5 {
     color: #d9d9d9;
     font-family: "Pirata One";
@@ -46,6 +48,9 @@ nav {
     padding-left: 11px;
     margin-right: 10px;
 }
+.nav > li:before {
+    content: none;
+}
 .nav > li > a:hover {
     background: transparent;
 }
@@ -72,6 +77,9 @@ p {
 }
 p > a {
     color: #018cb3;
+}
+ul {
+    list-style: none;
 }
 footer {
     border-top: solid;
