@@ -32,6 +32,14 @@ MANAGERS = ADMINS
 
 ALLOWED_HOSTS = ['*']
 
+# database config
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(PROJECT_PATH, 'database/db.sqlite3'),
+    }
+}
+
 # application definition
 
 INSTALLED_APPS = (
@@ -43,7 +51,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'root',
-    'blog',
+    'log',
     'mcc',
     'powerzone'
 )
