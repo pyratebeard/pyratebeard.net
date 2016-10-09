@@ -1,11 +1,11 @@
 {% extends 'log/log_framework.html' %}
 {% block logcontent %}
-   <h3>Category: {{ category.title }}</h3>
+   <h4>Category: {{ category.title }}</h4>
     <br>
     {% if posts %}
     <ul>
         {% for post in posts %}
-        <li>{{ post.posted }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+        <li><p>{{ post.posted }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.get_absolute_url }}">{{ post.title }}</a></p></li>
         {% endfor %}
     </ul>
     {% else %}
