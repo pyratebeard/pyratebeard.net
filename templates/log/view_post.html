@@ -1,7 +1,7 @@
 {% extends 'log/log_framework.html' %}
 {% block logcontent %}
-    <h3>{{ post.title }}</h3>
-    <p>Posted:&nbsp;&nbsp;{{ post.posted }}</p>
+    <h4>{{ post.title }}</h4>
+    <p>Posted:&nbsp;&nbsp;{{ post.posted }} | Category: <a href="{{ post.category.get_absolute_url }}">{{ post.category }}</a></p>
+    <hr>
     <p>{{ post.body }}</p>
-    <p>Posted in category: <a href="{{ post.category.get_absolute_url }}">{{ post.category }}</a></p>
 {% endblock %}
