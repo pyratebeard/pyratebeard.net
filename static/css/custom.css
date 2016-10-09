@@ -36,7 +36,7 @@ a {
 a:active,
 a:hover {
     text-decoration: none;
-    color: #019cb3;
+    color: #64b2db;
 }
 nav {
     font-size: 2em;
@@ -82,7 +82,7 @@ p {
     font-size: 1.3em;
 }
 p > a {
-    color: #018cb3;
+    color: #64b2db;
 }
 ul {
     list-style: none;
