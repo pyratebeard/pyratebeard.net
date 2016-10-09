@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Pirata One");
-@import url("https://fonts.googleapis.com/css?family=Acme");
+@font-face {
+    font-family: "bebas";
+    src: url("../fonts/BebasNeue.woff2") format("woff2");
+}
+@font-face {
+    font-family: "envy";
+    src: url("../fonts/Envy Code R.woff2") format("woff2");
+}
 body {
   font-family: "Pirata One";
   font-size: 14px;
