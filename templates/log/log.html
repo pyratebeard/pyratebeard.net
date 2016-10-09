@@ -1,9 +1,8 @@
 {% extends 'log/log_framework.html' %}
 {% block logcontent %}
-    <p>Sometimes I write about things...</p>
     {% if recent_posts %}
         {% for post in recent_posts %}
-            <h3>{{ post.title }}</h3>
+            <h4>{{ post.title }}</h4>
             <p>Posted:&nbsp;&nbsp;{{ post.posted }}</p>
             <p><a href="{{ post.get_absolute_url }}">Read...</a></p>
         {% endfor %}
