@@ -34,7 +34,6 @@ h6 {
     font-weight: bold;
 }
 a {
-    color: #d9d9d9;
     text-decoration: none;
 }
 a:active,
@@ -46,6 +45,19 @@ nav {
     font-size: 2em;
     font-family: "bebas"
 }
+.nav > a {
+    color: #d9d9d9;
+}
+.nav > li:before {
+    content: none;
+}
+.nav > li > a {
+    color: #d9d9d9;
+}
+.nav > li > a:hover {
+    background: transparent;
+    color: #64b2db;
+}
 .navbar {
     border-bottom: solid;
     border-bottom-color: #d9d9d9;
@@ -55,13 +67,6 @@ nav {
     padding-top: 5px;
     padding-left: 11px;
     margin-right: 10px;
-    /*font-size: 1.4em;*/
-}
-.nav > li:before {
-    content: none;
-}
-.nav > li > a:hover {
-    background: transparent;
 }
 .icon-bar {
     background: #d9d9d9;
@@ -69,9 +74,7 @@ nav {
 pre, code {
     color: #d9d9d9;
     background-color: #0b0b0b;
-}
-code {
-    background-color: transparent;
+    font-family: monospace, monospace;
 }
 .container {
     max-width: 1132px;
@@ -89,12 +92,30 @@ p > a {
 ul {
     list-style: none;
 }
-li > p > a {
+.sidebar > li > a {
     color: #d9d9d9;
+}
+.sidebar > li > a:hover {
+    color: #64b2db;
+}
+table {
+    width: 100%;
+}
+tr {
+    border-bottom: solid 1px #0b0b0b;
+}
+td {
+    padding: 10px;
+}
+td > p {
+    margin: 0 0 0px;
 }
 footer {
     border-top: solid;
     border-top-color: #d9d9d9;
     border-top-width: 1px;
     font-family: "envy";
+}
+.footer > a {
+    color: #d9d9d9;
 }
