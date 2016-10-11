@@ -1,27 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Pirata One");
 @font-face {
     font-family: "bebas";
     src: url("../fonts/BebasNeue.woff2") format("woff2");
-}
-@font-face {
-    font-family: 'Conv_Lato-Regular';
-    src: url('fonts/Lato-Regular.eot');
-    src: local('☺'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype'), url('../fonts/Lato-Regular.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 @font-face {
     font-family: "envy";
     src: url("../fonts/Envy Code R.woff2") format("woff2");
 }
 body {
-  font-family: "Conv_Lato-Regular";
+  font-family: "envy";
   font-size: 14px;
   color: #d9d9d9;
-  background-image: url("/static/img/bg/ocean.jpg");
-  background-repeat: repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-image: url("/static/img/bg/ocean_fade.jpg");
+  background-repeat: no-repeat;
+  background-color: #151515;
 }
 .panel {
     background-color: transparent;
@@ -35,7 +26,7 @@ h3,
 h4,
 h5 {
     color: #d9d9d9;
-    font-family: "Pirata One";
+    font-family: "bebas";
 }
 a {
     color: #d9d9d9;
@@ -48,7 +39,7 @@ a:hover {
 }
 nav {
     font-size: 2em;
-    font-family: "Pirata One"
+    font-family: "bebas"
 }
 .navbar {
     border-bottom: solid;
@@ -72,7 +63,10 @@ nav {
 }
 pre, code {
     color: #d9d9d9;
-    background-color: #151515;
+    background-color: #0b0b0b;
+}
+code {
+    background-color: transparent;
 }
 .container {
     max-width: 1132px;
@@ -83,10 +77,6 @@ pre, code {
 .content {
     padding-left: 20px;
     padding-right: 20px;
-    /*font-family: "envy";*/
-}
-p {
-    /*font-size: 1.3em;*/
 }
 p > a {
     color: #64b2db;
@@ -101,6 +91,5 @@ footer {
     border-top: solid;
     border-top-color: #d9d9d9;
     border-top-width: 1px;
-    font-size: 1.5em;
-    font-family: "Pirata One";
+    font-family: "envy";
 }
