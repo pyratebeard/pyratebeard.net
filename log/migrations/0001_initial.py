@@ -15,6 +15,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('title', models.CharField(unique=True, max_length=100)),
+                ('description', models.TextField()),
                 ('slug', models.SlugField(unique=True, max_length=100)),
                 ('body', models.TextField()),
                 ('posted', models.DateField(auto_now_add=True, db_index=True)),
@@ -25,6 +26,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('title', models.CharField(unique=True, max_length=100)),
+                ('subtitle', models.CharField(unique=True, max_length=100)),
                 ('slug', models.SlugField(unique=True, max_length=100)),
             ],
         ),
