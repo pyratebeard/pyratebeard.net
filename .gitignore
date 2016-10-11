@@ -27,6 +27,7 @@
 *.sql
 *.sqlite
 *.sqlite3
+database/*
  
 # OS generated files #
 ######################
