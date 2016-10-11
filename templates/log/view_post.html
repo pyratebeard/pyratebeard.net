@@ -3,5 +3,5 @@
     <h4>{{ post.title }}</h4>
     <p>Posted:&nbsp;&nbsp;{{ post.posted }} | Category: <a href="{{ post.category.get_absolute_url }}">{{ post.category }}</a></p>
     <hr>
-    <p>{{ post.body }}</p>
+    <p>{{ post.body|safe }}</p>
 {% endblock %}
