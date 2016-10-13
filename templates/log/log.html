@@ -2,7 +2,7 @@
 {% block logcontent %}
     {% if recent_posts %}
         {% for post in recent_posts %}
-            <h4>{{ post.title }}</h4>
+            <h6>{{ post.title }}</h6>
             <p>Posted:&nbsp;&nbsp;{{ post.posted }}</p>
             <p>{{ post.description|safe }}</p>
             <p><a href="{{ post.get_absolute_url }}">Read...</a></p>

@@ -1,6 +1,6 @@
 {% extends 'log/log_framework.html' %}
 {% block logcontent %}
-    <h4>{{ post.title }}</h4>
+    <h6>{{ post.title }}</h6>
     <p>Posted:&nbsp;&nbsp;{{ post.posted }} | Category: <a href="{{ post.category.get_absolute_url }}">{{ post.category }}</a></p>
     <hr>
     <p>{{ post.body|safe }}</p>
