@@ -9,74 +9,105 @@
   <meta name='description' content='nautical nonsense'>
   <meta name='keywords' content='pyratebeard, pyrate, pirate, beard, linux, gnu/linux, hack, code, programmer, netsec, geek, geeky, devops, comics, comic book, coffee, cold brew'>
   <meta name='author' content='pyratebeard'>
-  <!-- add twitter meta -->
-  <link rel="icon" href="{% static 'img/favicon.ico' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-cyborg.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}" />
-  <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
   <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>
   <script src="{% static 'js/jquery-ui.js' %}"></script>
   <script src="{% static 'js/bootstrap.js' %}"></script>
 </head>
 <body>
-<div class="container">
-  <div class="panel">
-    <div id="top">
-      <!-- <img src="{% static 'img/header/text_logo.png' %}"> -->
+<div class="col-md-13">
+  <div class="col-md-13">
+    <div class="top">
     </div>
+  </div>
+  <div class="col-md-2">
     <nav class="navbar" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          MENU
+          <!-- <hr> -->
+          <!-- <div class="container-fluid"> -->
+            <!-- <div class="navbar-header"> -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <!-- </div> -->
+          <!-- </div> -->
+      </div>
+      <div class="panel-body">
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav">
             <li class="active"><a href="/">HOME</a></li>
             <li><a href="/log">LOG</a></li>
             <li><a href="/mcc">MCC</a></li>
             <li><a href="/powerzone">POWERZONE</a></li>
           </ul>
-<!--           <ul class="nav navbar-nav navbar-right">
-            <a href="https://twitter.com/pyratebeard">TWITTER</a>
-            <a href="https://github.com/pyratebeard">GITHUB</a>
-          </ul> -->
-        </div>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-13">
-            {% block content %}
-            {% endblock %}
         </div>
       </div>
     </div>
-    <footer>
-      <div class="row">
+    </nav>
+  </div>
+  <div class="col-md-7">
+    <div class="panel panel-default">
+      <div class="panel-heading content">
+        CONTENT
+        <!-- <hr> -->
+      </div>
+      <div class="panel-body" style="min-height: 500px;">
+        <div class="content">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        SIDEBAR
+        <!-- <hr> -->
+      </div>
+      <div class="panel-body">
+        {% block sidebar %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7 col-md-offset-2">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        FOOTER
+        <!-- <hr> -->
+      </div>
+      <div class="panel-body">
+        <footer>
+          <div class="row">
         <div class="col-md-13 text-center">
-          <div class="col-md-4 footer">
-            <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC</a> 2016 pyratebeard
+          <div class="col-md-3">
+            <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC</a> 2016 PYRATEBEARD
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
           </div>
-          <div class="col-md-6 footer">
+          <div class="col-md-6">
             root@pyratebeard.net
             |
-            <a href="https://twitter.com/pyratebeard">twitter</a>
+            <a href="https://twitter.com/pyratebeard" target="_blank" rel="noopener noreferrer">TWITTER</a>
             |
-            <a href="https://github.com/pyratebeard">github</a>
+            <a href="https://github.com/pyratebeard" target="_blank" rel="noopener noreferrer">GITHUB</a>
             |
-            <a href="https://keybase.io/pyratebeard">keybase</a>
+            <a href="https://keybase.io/pyratebeard" target="_blank" rel="noopener noreferrer">KEYBASE</a>
           </div>
         </div>
       </div>
-    </footer>
+        </footer>
+      </div>
+    </div>
   </div>
 </div>
 </body>
 </html>
+
