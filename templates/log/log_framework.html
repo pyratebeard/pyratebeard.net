@@ -1,34 +1,31 @@
 {% extends 'framework.html' %}
 {% block content %}
-<div class="content">
-    <div class="col-md-13">
-        <div class="col-md-9">
-        {% block logcontent %}
-        {% endblock %}
-        </div>
-        <div class='col-md-3'>
-            <h6>Categories</h6>
-            {% if categories %}
-            <ul class="sidebar">
-                {% for category in categories %}
-                <li><a href="{{ category.get_absolute_url }}">{{ category.title }}</a></li>
-                {% endfor %}
-            </ul>
-            {% else %}
-            <p>There are currently no categories</p>
-            {% endif %}
-            <br>
-            <h6>Recent Posts</h6>
-            {% if recent_posts %}
-            <ul class="sidebar">
-                {% for post in recent_posts %}
-                <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-            {% else %}
-            <p>Nothing has been posted yet</p>
-            {% endif %}
-        </div>
-    </div>
-</div>
+{% block logcontent %}
+{% endblock %}
+{% endblock %}
+
+{% block sidebar %}
+
+<p>CATEGORIES</p>
+{% if categories %}
+  <ul class="sidebar">
+      {% for category in categories %}
+      <li><a href="{{ category.get_absolute_url }}">{{ category.title }}</a></li>
+      {% endfor %}
+  </ul>
+  {% else %}
+  <p>There are currently no categories</p>
+{% endif %}
+
+<p>RECENT POSTS</p>
+{% if recent_posts %}
+  <ul class="sidebar">
+      {% for post in recent_posts %}
+      <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+      {% endfor %}
+  </ul>
+  {% else %}
+  <p>Nothing has been posted yet</p>
+{% endif %}
+
 {% endblock %}

@@ -1,14 +1,14 @@
 {% extends 'log/log_framework.html' %}
 {% block logcontent %}
-   <h6>Category: {{ category.title }}</h6>
+<p>Category: {{ category.title }}</p>
     <br>
-    {% if posts %}
+{% if posts %}
     <ul>
         {% for post in posts %}
         <li><p>{{ post.posted }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.get_absolute_url }}">{{ post.title }}</a></p></li>
         {% endfor %}
     </ul>
-    {% else %}
-    <p>Nothing has been posted yet</p>
-    {% endif %}
+{% else %}
+<p>Nothing has been posted yet</p>
+{% endif %}
 {% endblock %}
