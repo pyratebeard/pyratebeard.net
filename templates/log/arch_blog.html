@@ -35,23 +35,28 @@ timedatectl status</pre>
      <p>As mentioned security is pretty important. Before we continue we will write lots of random data to the disk so that it is completely wiped clean.  This may take a while, so grab a brew!</p>
      <pre>dd if=/dev/urandom of=/dev/sda bs=1M</pre>
      <p>Once that is completed we need to create the partition table. We are only going to create two partitions, one for the boot partition and one for the rest of the disk.  Later on we will use LVM (<a href="https://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29" target="_blank" rel="noopener noreferrer">Logical Volume Manager</a>) to break the disk down further</p>
-     <pre>gdisk /dev/sda
-Command (? for help):
+     <pre>fdisk /dev/sda</pre>
+     <p>You will now be in the fdisk utility, and you will see the prompt has changed.</p>
+     <pre>Command (? for help):
 p (should be empty)
 n
+p
 1
 [return]
 +512M
-(L to view list)
-ef02
+t
+L
+83
 n
+p
 2
 [return]
 [return]
-8e00 (Linux LVM)
+t
+2
+8e
 p
-w
-y</pre>          
+w</pre>          
      <p>Make sure the device now shows the two partitions, sda1 and sda2</p>
      <pre>lsblk</pre>
      <p>Format /boot partition</p>
@@ -120,7 +125,7 @@ cat /mnt/etc/fstab</pre>
      <pre>locale-gen
 echo LANG=en_GB.UTF-8 > /etc/locale.conf
 export LANG=en_GB.UTF-8</pre>
-     <p>We need to set the keymap so that is sets on boot</p>
+     <p>We need to set the keymap so that it sets on boot</p>
      <pre>echo 'KEYMAP="gb"' > /etc/vconsole.conf</pre>
      <p>Pick a hostname that is relevant, or clever, or funny</p>
      <pre>echo gibson > /etc/hostname
@@ -136,7 +141,7 @@ grub-install --target=i386-pc /dev/sda
 vi /etc/default/grub</pre>
      <p>Navigate to line GRUB_CMDLINE_LINUX=""</p>
      <p>Change to</p>
-     <pre>GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:vg_arch-lv_root"</pre>
+     <pre>GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:vg_arch"</pre>
      <p>Save and quit</p>
      <pre>grub-mkconfig -o /boot/grub/grub.cfg
 vi /etc/mkinitcpio.conf</pre>
@@ -167,4 +172,5 @@ reboot</pre>
 </div>
 </div>
 <br>
-<p>Congratulations, you've successfully installed Arch Linux with an encrypted root filesystem.  I will be doing another blog soon which details how I set up my system, including the Window Manager, various applications I use</p>
+<p>Congratulations, you've successfully installed Arch Linux with an encrypted root filesystem.</p>
+<p>I will be doing another blog soon which details how I set up my system, including the Window Manager, various applications, and the all important "dotfiles"!</p>
