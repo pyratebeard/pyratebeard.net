@@ -113,8 +113,12 @@ blockquote {
     max-width: 90%;
     margin-left: 5%;
 }
-blockquote > p > a,
-a:active,
-a:hover {
+blockquote > p > a {
     color: #55ddff;
+}
+blockquote > p > a:hover,
+a:active,
+a:focus {
+    color: #020608;
+    background: #55ddff;
 }
