@@ -13,17 +13,17 @@ body {
     font-family: "envy";
     font-size: 1.3em;
     background-color: #010101;
-    color: #d9d9d9;
+    color: #cceeff;
     background-image: url("/static/img/bg/wires_fade_dark.jpg");
     background-repeat: no-repeat;
 }
 a {
-    color: #d9d9d9;
+    color: #cceeff;
 }
 a:active,
 a:hover {
     text-decoration: none;
-    color: #01c8e5;
+    color: #55ddff;
 }
 .top {
     min-height: 50px;
@@ -38,81 +38,83 @@ a:hover {
     padding: 0px;
 }
 .icon-bar {
-    background-color: #d9d9d9;
+    background-color: #cceeff;
 }
 .panel {
-    border: solid 2px #d9d9d9;
+    border: solid 2px #cceeff;
     border-radius: 0px;
-    background-color: #0b0b0b;
+    background-color: #020608;
 }
 .panel-default > .panel-heading {
     padding-top: 0px;
     padding-bottom: 0px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
-    border-bottom: solid 1px #d9d9d9;
-    background-color: #0b0b0b;
-    color: #d9d9d9;
+    border-bottom: solid 1px #cceeff;
+    background-color: #020608;
+    color: #cceeff;
 }
 .panel > .content {
-    background-color: #d9d9d9;
-    color: #0b0b0b;
+    background-color: #cceeff;
+    color: #020608;
 }
 hr {
     margin-top: 3px;
     margin-bottom: 1px;
-    border-top: solid 1px #d9d9d9;
+    border-top: solid 1px #cceeff;
 }
 .content > p > a {
-    color: #01c8e5;
+    color: #55ddff;
 }
 .content > p > a:hover,
 a:active,
 a:focus {
-    color: #0b0b0b;
-    background: #01c8e5;
+    color: #020608;
+    background: #55ddff;
 }
 ul {
     list-style: none;
 }
 .sidebar > li > a {
-    color: #01c8e5;
+    color: #55ddff;
 }
 .sidebar > li > a:hover,
 a:active,
 a:focus {
-    color: #0b0b0b;
-    background: #01c8e5;
+    color: #020608;
+    background: #55ddff;
 }
 .guide {
     max-width: 100%;
 }
 .guide > p > a {
-    color: #01c8e5;
+    color: #55ddff;
 }
 .guide > p > a:hover,
 a:active,
 a:focus {
-    color: #0b0b0b;
-    background: #01c8e5;
+    color: #020608;
+    background: #55ddff;
 }
 code {
-    color: #0b0b0b;
-    background-color: #d9d9d9;
+    color: #020608;
+    background-color: #cceeff;
 }
 pre {
     max-width: 60%;
-    color: #d9d9d9;
+    color: #cceeff;
     background-color: #010101;
     font-family: envy; 
 }
 blockquote {
     font-size: 1em;
-    border-left: 1px solid #01c8e5;
-    /*border-bottom: 1px solid #01c8e5;*/
+    border-left: 2px solid #55ddff;
+    background-color: #222222;
+    max-width: 90%;
+    margin-left: 5%;
 }
 blockquote > p > a,
 a:active,
 a:hover {
-    color: #01c8e5;
+    color: #55ddff;
 }
