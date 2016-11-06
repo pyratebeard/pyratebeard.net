@@ -3,9 +3,9 @@
 <p>Category: {{ category.title }}</p>
     <br>
 {% if posts %}
-    <ul>
+    <ul class="sidebar">
         {% for post in posts %}
-        <li><p>{{ post.posted }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.get_absolute_url }}">{{ post.title }}</a></p></li>
+        <li>{{ post.posted }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
 {% else %}

@@ -1,0 +1,10 @@
+     <p>switch to root</p>
+     <pre>vi /etc/pacman.conf</pre>
+     <p>remove # in front of [mulitlib] and next line</p>
+     <p>sync package databases</p>
+     <pre>pacman -Syu</pre>
+     <p>post install setup</p>
+          <p>install xorg</p>
+pacman -S xorg-server xorg-server-utils xorg-xinit mesa
+pacman -S herbstluftwm
+pacman -S vim hub openssh rxvt-unicode
