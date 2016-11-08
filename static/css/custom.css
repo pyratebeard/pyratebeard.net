@@ -99,13 +99,16 @@ a:focus {
 }
 code {
     color: #010101;
-    background-color: #aaeeff;
+    background-color: #999;
 }
 pre {
     max-width: 60%;
-    color: #aaeeff;
+    color: #d9d9d9;
     background-color: #010101;
     font-family: envy; 
+    border-radius: 0px;
+    border-color: #222;
+    font-family: monospace;
 }
 blockquote {
     font-size: 1em;
