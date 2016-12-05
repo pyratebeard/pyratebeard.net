@@ -24,7 +24,7 @@ a {
 a:active,
 a:hover {
     text-decoration: none;
-    color: #00ccff;
+    color: #66ccdd;
 }
 .top {
     min-height: 50px;
@@ -65,37 +65,37 @@ hr {
     border-top: solid 1px #d9d9d9;
 }
 .content > p > a {
-    color: #00ccff;
+    color: #66ccdd;
 }
 .content > p > a:hover,
 a:active,
 a:focus {
     color: #010101;
-    background: #00ccff;
+    background: #66ccdd;
 }
 ul {
     list-style: none;
 }
 .sidebar > li > a {
-    color: #00ccff;
+    color: #66ccdd;
 }
 .sidebar > li > a:hover,
 a:active,
 a:focus {
     color: #010101;
-    background: #00ccff;
+    background: #66ccdd;
 }
 .guide {
     max-width: 100%;
 }
 .guide > p > a {
-    color: #00ccff;
+    color: #66ccdd;
 }
 .guide > p > a:hover,
 a:active,
 a:focus {
     color: #010101;
-    background: #00ccff;
+    background: #66ccdd;
 }
 code {
     color: #010101;
@@ -103,26 +103,26 @@ code {
 }
 pre {
     max-width: 60%;
-    color: #aaeeff;
+    color: #d9d9d9;
     background-color: #010101;
-    font-family: envy; 
+    /*font-family: envy; */
     border-radius: 0px;
-    border-color: #222;
+    border-color: #33aaaa;
     font-family: monospace;
 }
 blockquote {
     font-size: 1em;
-    border-left: 5px solid #00ccff;
+    border: 1px solid #33aaaa;
     background-color: #222222;
     max-width: 90%;
     margin-left: 5%;
 }
 blockquote > p > a {
-    color: #00ccff;
+    color: #66ccdd;
 }
 blockquote > p > a:hover,
 a:active,
 a:focus {
     color: #010101;
-    background: #00ccff;
+    background: #66ccdd;
 }
