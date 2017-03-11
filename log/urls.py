@@ -1,7 +1,8 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
+from log.views import log, view_post, view_category
 
-urlpatterns = patterns('',
-    url(r'^$', 'log.views.log'),
-    url(r'^/post/(?P<slug>[^\.]+).html', 'log.views.view_post', name='view_log_post'),
-    url(r'^/category/(?P<slug>[^\.]+).html', 'log.views.view_category', name='view_log_category'),
-)
+urlpatterns = [
+    url(r'^$', log, name='log'),
+    url(r'^/post/(?P<slug>[^\.]+).html', view_post, name='view_log_post'),
+    url(r'^/category/(?P<slug>[^\.]+).html', view_category, name='view_log_category'),
+]

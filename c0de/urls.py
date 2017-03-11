@@ -1,5 +1,6 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
+from c0de.views import code
 
-urlpatterns = patterns('',
-    url(r'^$', 'c0de.views.code'),
-)
+urlpatterns = [
+    url(r'^$', code, name='code'),
+]

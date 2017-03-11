@@ -1,5 +1,6 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
+from root.views import root
 
-urlpatterns = patterns('',
-    url(r'^$', 'root.views.root'),
-)
+urlpatterns = [
+    url(r'^$', root, name='root'),
+]

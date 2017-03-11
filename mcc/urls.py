@@ -1,5 +1,6 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
+from mcc.views import mcc
 
-urlpatterns = patterns('',
-    url(r'^$', 'mcc.views.mcc'),
-)
+urlpatterns = [
+    url(r'^$', mcc, name='mcc'),
+]

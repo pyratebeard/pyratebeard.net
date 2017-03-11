@@ -1,5 +1,6 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
+from powerzone.views import powerzone
 
-urlpatterns = patterns('',
-    url(r'^$', 'powerzone.views.powerzone'),
-)
+urlpatterns = [
+    url(r'^$', powerzone, name='powerzone'),
+]
